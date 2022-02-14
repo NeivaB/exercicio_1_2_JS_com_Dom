@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio1</title>
+</head>
+
+<body>
+    <a href="index.html"> Exercicio 1</a>
+    <a href="Exercicio2.html"> Exercicio 2</a>
+    <div>
+        <input type="number" name="" id="numero_01">
+    </div>
+    <div>
+        <input type="number" name="" id="numero_02">
+    </div>
+    <div>
+        <input type="number" name="" id="numero_03">
+    </div>
+    <div>
+        <button onclick="Calcular()" id="button">resultado</button>
+    </div>
+
+    <div id="div_resultado">
+
+    </div>
+
+
+</body>
+
+</html>
+
+
+<script>
+
+    function Calcular() {
+
+        const input_01 = document.getElementById("numero_01")
+        const input_01_value = Number(input_01.value)
+
+        const input_02 = document.getElementById("numero_02")
+        const input_02_value = Number(input_02.value)
+
+        const input_03 = document.getElementById("numero_03")
+        const input_03_value = Number(input_03.value)
+
+        const resultado = input_01_value + input_02_value + input_03_value
+
+        const divResultado = document.getElementById("div_resultado")
+        divResultado.innerHTML = resultado
+    }
+
+</script>
